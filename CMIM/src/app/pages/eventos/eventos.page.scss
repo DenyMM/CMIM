@@ -1,0 +1,24 @@
+ion-content.background{
+    --background: url(../../../assets/background1.png ) 0 0/100% 100% no-repeat;
+  }
+
+  .thin-text{
+    font-weight: 200;
+   }
+
+   ion-card{
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+} 
+   .event-card{
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+   }
+
+   .card-font {
+       font-weight: 600;
+       font-size: 30px;
+       padding-top: 10px;
+       color: #00378a;
+}

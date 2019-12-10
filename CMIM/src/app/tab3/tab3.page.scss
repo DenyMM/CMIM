@@ -1,0 +1,54 @@
+ion-content.background{
+    --background: url(../../assets/back-login.png ) 0 0/100% 100% no-repeat;
+  }
+
+  .center-logo{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .white-login{
+        color: #00378a;
+        background-color: #fff;
+        display: grid;
+        justify-content: center;
+
+        border-radius: 106px 106px 106px 106px;
+        -moz-border-radius: 106px 106px 106px 106px;
+        -webkit-border-radius: 106px 106px 106px 106px;
+        border: 0px solid #ffffff;
+    }
+
+    .thin-text{
+        font-weight: 300;
+       }
+
+    .white-font{
+        color:#fff;
+    }
+
+    .blue-font{
+        color:#00378a;
+    }
+
+    .color-button{
+        background: linear-gradient( #972c81 , #551748 );
+        display: grid;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 106px 106px 106px 106px;
+        -moz-border-radius: 106px 106px 106px 106px;
+        -webkit-border-radius: 106px 106px 106px 106px;
+        border: 0px solid #ffffff00;
+    }
+
+    .centered-thin-box{
+        margin-inline-start: 45px !important;
+        margin-inline-end: 45px !important;
+    }
+
+    .centered-thin-button{
+        margin-inline-start: 140px !important;
+        margin-inline-end: 140px !important;
+    }

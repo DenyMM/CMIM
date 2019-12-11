@@ -1,9 +1,193 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>mesa</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title class="thin-text" text-center>
+      Consejo Directivo
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
+              <ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment" color="secondary" >
+                <ion-segment-button class="segment-oval-left" value="0" mode="ios">
+                        <h4 class="thin-text small-font">Presidencia</h4>
+                </ion-segment-button>
+                <ion-segment-button class="segment-oval" value="1" mode="ios">
+                        <h4 class="thin-text small-font">Secretarios</h4>
+                </ion-segment-button>
+                <ion-segment-button class="segment-oval" value="2" mode="ios">
+                        <h4 class="thin-text small-font">Vocales</h4>
+                </ion-segment-button>
+                <ion-segment-button class="segment-oval-right" value="3" mode="ios">
+                    <h4 class="thin-text small-font">Tesorero</h4>
+            </ion-segment-button>
+              </ion-segment>
+
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+      <!--PRESIDENTES-->
+        <ion-slide>
+          <ion-item-group>
+          <ion-card>
+          <ion-row>
+            <ion-col size="4"><br>
+                <img src="../../../assets/consejo/alfredo_cabrera.jpg">
+            </ion-col>
+            <ion-col size="8">
+                <h3 class="primary-blue" >Dr. Alfredo Cabrera Rayo</h3>
+                <hr>
+                <h4 class="thin-text primary-blue">Presidente</h4>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-card>
+            <ion-row>
+              <ion-col size="4"><br>
+                  <img src="../../../assets/consejo/nikos_christo_secchi_nicolas.png">
+              </ion-col>
+              <ion-col size="8">
+                  <h3 class="primary-blue" >Dr. Nikos Christo Secchi Nicolas</h3>
+                  <hr>
+                  <h4 class="thin-text primary-blue">Vicepresidente</h4>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-item-group>
+        </ion-slide>
+     <!--SECRETARIOS-->
+        <ion-slide>
+            <ion-item-group>
+            <ion-card>
+            <ion-row>
+              <ion-col size="4"><br>
+                  <img src="../../../assets/consejo/Ma_Pilar_Cruz.jpg">
+              </ion-col>
+              <ion-col size="8">
+                  <h3 class="primary-blue">Dra. María del Pilar Cruz Domínguez</h3>
+                  <hr>
+                  <h4 class="thin-text primary-blue">Primer Secretario</h4>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+              <ion-row>
+                <ion-col size="4"><br>
+                    <img src="../../../assets/consejo/faustino_morales_gomez.png">
+                </ion-col>
+                <ion-col size="8">
+                    <h3 class="primary-blue">Dr. Faustino Morales Gómez</h3>
+                    <hr>
+                    <h4 class="thin-text primary-blue">Segundo Secretario</h4>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+            <ion-card>
+                <ion-row>
+                  <ion-col size="4"><br>
+                      <img src="../../../assets/consejo/maria_cristina_guerrero_deleon.png">
+                  </ion-col>
+                  <ion-col size="8">
+                      <h3 class="primary-blue">Dra. María Cristina Guerrero de León</h3>
+                      <hr>
+                      <h4 class="thin-text primary-blue">Primer Secretario suplente</h4>
+                  </ion-col>
+                </ion-row>
+              </ion-card>
+              <ion-card>
+                  <ion-row>
+                    <ion-col size="4"><br>
+                        <img src="../../../assets/consejo/juan_carlos_anda_garay.png">
+                    </ion-col>
+                    <ion-col size="8">
+                        <h3 class="primary-blue">Dr. Juan Carlos Anda Garay</h3>
+                        <hr>
+                        <h4 class="thin-text primary-blue">Segundo Secretario suplente</h4>
+                    </ion-col>
+                  </ion-row>
+                </ion-card>
+              </ion-item-group>
+          </ion-slide>
+          <!--VOCALES-->
+          <ion-slide>
+              <ion-item-group>
+              <ion-card>
+              <ion-row>
+                <ion-col size="4"><br>
+                    <img src="../../../assets/consejo/Julio_Jimenez.jpg">
+                </ion-col>
+                <ion-col size="8">
+                    <h3 class="primary-blue">Dr. Julio César Jiménez Paredes</h3>
+                    <hr>
+                    <h4 class="thin-text primary-blue">Primer Vocal</h4>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+            <ion-card>
+                <ion-row>
+                  <ion-col size="4"><br>
+                      <img src="../../../assets/consejo/Karina_Diaz.jpg">
+                  </ion-col>
+                  <ion-col size="8">
+                      <h3 class="primary-blue">Dra. Karina Díaz Jiménez</h3>
+                      <hr>
+                      <h4 class="thin-text primary-blue">Segundo Vocal</h4>
+                  </ion-col>
+                </ion-row>
+              </ion-card>
+              <ion-card>
+                  <ion-row>
+                    <ion-col size="4"><br>
+                        <img src="../../../assets/consejo/francisco_zambrano_espiritu.png">
+                    </ion-col>
+                    <ion-col size="8">
+                        <h3 class="primary-blue">Dr. Francisco Zambrano Espíritu</h3>
+                        <hr>
+                        <h4 class="thin-text primary-blue">Primer Vocal suplente</h4>
+                    </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                    <ion-row>
+                      <ion-col size="4"><br>
+                          <img src="../../../assets/consejo/ramon_barrera_cruz.png">
+                      </ion-col>
+                      <ion-col size="8">
+                          <h3 class="primary-blue">Dr. Ramón Barrera Cruz</h3>
+                          <hr>
+                          <h4 class="thin-text primary-blue">Segundo vocal suplente</h4>
+                      </ion-col>
+                    </ion-row>
+                  </ion-card>
+                </ion-item-group>
+            </ion-slide>
+          <!--TESORERO-->
+          <ion-slide>
+              <ion-item-group>
+              <ion-card>
+              <ion-row>
+                <ion-col size="4"><br>
+                    <img src="../../../assets/consejo/Jose_Arredondo.jpg">
+                </ion-col>
+                <ion-col size="8">
+                    <h3 class="primary-blue">Dr. José de Jesús Arredondo Sandoval</h3>
+                    <hr>
+                    <h4 class="thin-text primary-blue">Tesorero</h4>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+            <ion-card>
+                <ion-row>
+                  <ion-col size="4"><br>
+                      <img src="../../../assets/consejo/miguel_angel_gomez_pluma.png">
+                  </ion-col>
+                  <ion-col size="8">
+                      <h3 class="primary-blue">Dr. Miguel Ángel Gómez Pluma</h3>
+                      <hr>
+                      <h4 class="thin-text primary-blue">Subtesorero</h4>
+                  </ion-col>
+                </ion-row>
+              </ion-card>
+            </ion-item-group>
+            </ion-slide>
+
+        </ion-slides>
 
 </ion-content>

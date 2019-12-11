@@ -29,6 +29,11 @@ const routes: Routes = [
             path: 'eventos',
             loadChildren: () =>
           import('../pages/eventos/eventos.module').then(m => m.EventosPageModule)
+          },
+          {
+            path: 'mesa',
+            loadChildren: () =>
+          import('../pages/mesa/mesa.module').then(m => m.MesaPageModule)
           }
         ]
       },

@@ -1,0 +1,95 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="thin-text" text-center>
+        Ligas de Interés
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="background">
+    <ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment" color="secondary" >
+        <ion-segment-button class="segment-oval-left" value="0" mode="ios">
+                <h4 class="thin-text small-font">Documentos <br> de Interés</h4>
+        </ion-segment-button>
+        <ion-segment-button class="segment-oval" value="1" mode="ios">
+                <h4 class="thin-text small-font">Enlaces <br> Útiles</h4>
+        </ion-segment-button>
+        <ion-segment-button class="segment-oval-right" value="2" mode="ios">
+                <h4 class="thin-text small-font">Sitios <br> de Interés</h4>
+        </ion-segment-button>
+      </ion-segment>
+
+<ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+<!--documentos-->
+<ion-slide>
+  <ion-item-group>
+     
+        <ion-card (click)="navegar('http://cmim.org/Home/Aspectos_eticos_mi')">
+         <h4> Aspectos Éticos de la Medicina Interna</h4>
+        </ion-card> 
+       <ion-card (click)="navegar('http://cmim.org/Home/Derechos_trabajadores_de_la_salud')">
+          <h4>Derechos generales de los trabajadores de la salud</h4>
+        </ion-card>
+       <ion-card (click)="navegar('http://cmim.org/Home/Derechos_pacientes')">
+          <h4>Derechos generales de los pacientes</h4>
+        </ion-card>
+       <ion-card (click)="navegar('http://cmim.org/Home/Obligaciones_pacientes')">
+          <h4>Obligaciones de los pacientes</h4>
+        </ion-card>
+       <ion-card (click)="navegar('http://cmim.org/Home/Recomendaciones_mejorar_practica_medicina')">
+          <h4>Recomendaciones generales para mejorar la práctica de la medicina</h4>
+        </ion-card>
+       <ion-card (click)="navegar('http://cmim.org/documentos/Guia_Buenas_Practicas_Atencion_Hospitalaria_2017.pdf')">
+          <h4>Guía de Buenas Prácticas para establecimientos de atención médica hospitalaria</h4>
+        </ion-card>
+  
+  </ion-item-group>
+</ion-slide>
+<!--Enlaces-->
+<ion-slide>
+    <ion-item-group>
+
+        <ion-card (click)="navegar('https://www.gob.mx/salud/cenetec')">
+            <h4> CENETEC</h4>
+           </ion-card> 
+          <ion-card (click)="navegar('https://www.farmacopea.org.mx/')">
+             <h4>FARMACOPEA</h4>
+           </ion-card>
+          <ion-card (click)="navegar('http://www.csg.gob.mx/contenidos/priorizacion/cuadro-basico.html')">
+             <h4>Cuadro Básico y Catálogo de Insumos del Sector Salud</h4>
+           </ion-card>
+          <ion-card (click)="navegar('https://www.gob.mx/conamed/articulos/biblioteca-virtual-conamed-27674?idiom=es')">
+             <h4>Biblioteca Virtual CONAMED</h4>
+           </ion-card>
+          
+    </ion-item-group>
+  </ion-slide>
+  <!--Sitios-->
+  <ion-slide>
+      <ion-item-group>
+        <ion-card (click)="navegar('http://www.cmmi.org.mx/')">
+            <h4> Consejo Mexicano de Medicina Interna</h4>
+           </ion-card> 
+          <ion-card (click)="navegar('http://www.anmm.org.mx/')">
+             <h4>Academia Nacional de Medicina de México</h4>
+           </ion-card>
+          <ion-card (click)="navegar('https://www.solami.com.mx/')">
+             <h4>Sociedad Latinoamericana de Medicina Interna</h4>
+           </ion-card>
+          <ion-card (click)="navegar('https://www.acponline.org/')">
+             <h4>American College of Physicians</h4>
+           </ion-card>
+           <ion-card (click)="navegar('https://www.isim-online.org/')">
+              <h4>Sociedad Internacional de Medicina Interna</h4>
+            </ion-card>
+            <ion-card (click)="navegar('https://www.gob.mx/conamed')">
+                <h4>Comisión Nacional de Arbitraje Médico</h4>
+              </ion-card>
+              <ion-card (click)="navegar('https://www.gob.mx/cofepris')">
+                  <h4>Comisión Federal para la Protección contra Riesgos Sanitarios</h4>
+                </ion-card>
+      </ion-item-group>
+    </ion-slide>
+
+</ion-slides>
+</ion-content>

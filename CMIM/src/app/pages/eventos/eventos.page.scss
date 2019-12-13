@@ -9,6 +9,7 @@ ion-content.background{
    ion-card{
     margin-inline-start: 30px;
     margin-inline-end: 30px;
+    background-color: #fff;
 } 
    .event-card{
     border-radius: 30px 30px 30px 30px;
@@ -18,7 +19,6 @@ ion-content.background{
 
    .card-font {
        font-weight: 600;
-       font-size: 25px;
        padding-top: 10px;
        color: #00378a;
 }

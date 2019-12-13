@@ -1,0 +1,23 @@
+ion-content.background{
+    --background: url(../../../assets/back-menu-congreso.png ) 0 0/100% 100% no-repeat;
+  }
+
+.center-logo{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    ion-card{
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+        border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+background-color: #fff;
+    }
+    .menu-font {
+        font-weight: 400;
+        color: #ffffff;
+    }

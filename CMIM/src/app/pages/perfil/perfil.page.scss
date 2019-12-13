@@ -1,0 +1,77 @@
+ion-content.background{
+    --background: url(../../../assets/background1.png ) 0 0/100% 100% no-repeat;
+  }
+
+  .thin-text{
+    font-weight: 200;
+   }
+
+   ion-card{
+    background-color: #fff;
+} 
+
+ion-avatar{
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    border-radius: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+    overflow: hidden; 
+}
+
+.perfil img{
+    width: 128px;
+  border-radius: 100%;
+}
+
+.icon-social{
+    font-size: 30px;
+    color: #fff;
+}
+
+.oval-card{
+    border-radius: 45px 45px 45px 45px;
+-moz-border-radius: 45px 45px 45px 45px;
+-webkit-border-radius: 45px 45px 45px 45px;
+border: 0px solid #000000;
+    background-color:#00378ab2; 
+}
+
+.c-1{
+    --background:#00378a ; 
+    color: #fff;
+}
+
+.c-2{
+    --background:#114088; 
+    color: #fff;
+}
+
+.c-3{
+    --background:#184488; 
+    color: #fff;
+}
+
+.c-4{
+    --background:#254c86; 
+    color: #fff;
+}
+
+.c-5{
+    --background:#2c528a; 
+    color: #fff;
+}
+
+ion-icon{
+    color: #fff;
+}
+
+.icon-space{
+    padding-right: 20px;
+    padding-left: 20px;
+}

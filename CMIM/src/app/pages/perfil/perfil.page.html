@@ -1,9 +1,65 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button text="" icon="arrow-dropleft-circle"></ion-back-button>
+        </ion-buttons>
+    <ion-title class="thin-text" text-center>
+      
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
+
+    <ion-card >
+        <ion-card-content>
+          <ion-avatar>
+            <img id="perfil" src="../../../assets/avatars/02.png">
+          </ion-avatar>
+          <br>  
+              <ion-card-title text-center>Dr. Alfredo Cabrera Rayo</ion-card-title>
+              <p text-center>Presidente</p>
+          </ion-card-content> 
+          <ion-row>
+              <ion-col size="4">
+                <ion-card class="oval-card" text-center>
+                    <ion-icon class="icon-social" name="logo-facebook"></ion-icon>
+                </ion-card>
+              </ion-col>
+              <ion-col size="4">
+                <ion-card class="oval-card" text-center>
+                    <ion-icon class="icon-social" name="logo-twitter"></ion-icon>
+                </ion-card>
+              </ion-col>
+              <ion-col size="4">
+                <ion-card class="oval-card" text-center>
+                    <ion-icon class="icon-social" name="mail"></ion-icon>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+      </ion-card>
+      
+      <ion-item-group>
+        <ion-item class="c-1">
+            <ion-icon class="icon-space" name="cash"></ion-icon>
+            <h4> Cuotas</h4>
+        </ion-item>
+        <ion-item class="c-2">
+            <ion-icon class="icon-space" name="folder"></ion-icon>
+            <h4> Revista</h4>
+        </ion-item>
+        <ion-item class="c-3">
+            <ion-icon class="icon-space" name="clipboard"></ion-icon>
+            <h4> Publicaciones</h4>
+        </ion-item>
+        <ion-item class="c-4">
+            <ion-icon class="icon-space" name="videocam"></ion-icon>
+            <h4> Sesiones Mensuales</h4>
+        </ion-item>
+        <ion-item class="c-5">
+            <ion-icon class="icon-space" name="briefcase"></ion-icon>
+            <h4> Marco Regulatorio</h4>
+        </ion-item>
+      </ion-item-group>
 
 </ion-content>

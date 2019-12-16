@@ -15,5 +15,8 @@ export class EventosPage  {
   navegar(ruta: string) {
     this.iab.create(ruta, '_system');
   }
+  async irPagina(pagina: any) {
+    this.navCtrl.navigateForward('/tabs/tab2/' + pagina);
+  }
 
 }

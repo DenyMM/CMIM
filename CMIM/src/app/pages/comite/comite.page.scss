@@ -1,0 +1,51 @@
+ion-content.background{
+    --background: url(../../../assets/background1.png ) 0 0/100% 100% no-repeat;
+  }
+
+  .thin-text{
+    font-weight: 200;
+   }
+
+   .segment-oval-right{
+    border-radius: 0px 30px 30px 0px;
+    -moz-border-radius: 0px 30px 30px 0px;
+    -webkit-border-radius: 0px 30px 30px 0px;
+    
+    border: 1px solid #7e266c;
+   }
+
+   .segment-oval-left{
+    border-radius: 30px 0px 0px 30px;
+    -moz-border-radius: 30px 0px 0px 30px;
+    -webkit-border-radius: 30px 0px 0px 30px;
+    border: 1px solid #7e266c;
+   }
+
+   .segment-oval{
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid #7e266c;
+   }
+
+  ion-segment-button{
+      padding-bottom: 15px;
+      background-color: #8E2979 !important ;
+
+  }
+
+  ion-card{
+      background-color: #fff;
+  }
+
+  hr{
+      background-color: #0A69A4;
+  }
+
+  .primary-blue{
+      color: #0A69A4;
+  }
+
+  .small-font{
+      font-size: 16px;
+  }

@@ -34,7 +34,42 @@ const routes: Routes = [
             path: 'mesa',
             loadChildren: () =>
           import('../pages/mesa/mesa.module').then(m => m.MesaPageModule)
-          }
+          },
+          {
+            path: 'ligas',
+            loadChildren: () =>
+          import('../pages/ligas/ligas.module').then(m => m.LigasPageModule)
+          },
+          {
+            path: 'contacto',
+            loadChildren: () =>
+          import('../pages/contacto/contacto.module').then(m => m.ContactoPageModule)
+          },
+          {
+            path: 'residentes',
+            loadChildren: () =>
+          import('../pages/residentes/residentes.module').then(m => m.ResidentesPageModule)
+          },
+          {
+            path: 'congreso',
+            children: [
+              {
+                path: '',
+                loadChildren: () =>
+                  import('../pages/congreso/congreso.module').then(m => m.CongresoPageModule)
+              },
+              {
+                path: 'comite',
+                loadChildren: () =>
+              import('../pages/comite/comite.module').then(m => m.ComitePageModule)
+              },
+              {
+                path: 'mensaje',
+                loadChildren: () =>
+              import('../pages/mensaje/mensaje.module').then(m => m.MensajePageModule)
+              }
+            ]
+          },
         ]
       },
       {
@@ -44,6 +79,11 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+          },
+          {
+            path: 'perfil',
+            loadChildren: () =>
+          import('../pages/perfil/perfil.module').then(m => m.PerfilPageModule)
           }
         ]
       },

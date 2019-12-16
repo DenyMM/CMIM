@@ -1,9 +1,155 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>comite</ion-title>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button text="" icon="arrow-dropleft-circle"></ion-back-button>
+        </ion-buttons>
+    <ion-title class="thin-text" text-center>
+      Comités
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
+              <ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment" color="secondary" >
+                <ion-segment-button class="segment-oval-left" value="0" mode="ios">
+                        <h4 class="thin-text small-font">Comité Organizador</h4>
+                </ion-segment-button>
+                <ion-segment-button class="segment-oval" value="1" mode="ios">
+                        <h4 class="thin-text small-font">Comité Académico Internacional</h4>
+            </ion-segment-button>
+              </ion-segment>
+
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+      <!--Organizador-->
+        <ion-slide>
+          <ion-item-group>
+          <ion-card>
+          <ion-row>
+            <ion-col size="12">
+              <img src="../../../assets/comite/drCabreraRayo.jpg">
+          </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-card>
+            <ion-row>
+              <ion-col size="12">
+                <img src="../../../assets/comite/draCDominguez.jpg">
+            </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col size="12">
+                <img src="../../../assets/comite/draDJimenez.jpg">
+            </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col size="12">
+                <img src="../../../assets/comite/drJCJimenez.jpg">
+            </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row>
+              <ion-col size="12">
+                <img src="../../../assets/comite/drJJArredondo.jpg">
+            </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-item-group>
+        </ion-slide>
+     <!--Académico-->
+        <ion-slide>
+            <ion-item-group>
+            <ion-card>
+            <ion-row>
+              <ion-col size="12">
+                  <img src="../../../assets/comite/draAMLopez.jpg">
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+              <ion-row>
+                <ion-col size="12">
+                  <img src="../../../assets/comite/draVHodd.jpg">
+              </ion-col>
+              </ion-row>
+            </ion-card>
+            <ion-card>
+                <ion-row>
+                  <ion-col size="12">
+                    <img src="../../../assets/comite/drMauron.jpg">
+                </ion-col>
+                </ion-row>
+              </ion-card>
+              <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drJLAkaki.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drPValdez.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/draCArias.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drLCampos.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drDdicker.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drRGomez.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drNmontano.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/draJKok.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+                <ion-card>
+                  <ion-row>
+                    <ion-col size="12">
+                      <img src="../../../assets/comite/drACardenas.jpg">
+                  </ion-col>
+                  </ion-row>
+                </ion-card>
+              </ion-item-group>
+          </ion-slide>
+        
+        </ion-slides>
 
 </ion-content>

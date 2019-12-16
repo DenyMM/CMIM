@@ -1,0 +1,23 @@
+ion-content.background{
+    --background: url(../../../assets/background1.png ) 0 0/100% 100% no-repeat;
+  }
+
+  .thin-textt{
+    font-weight: 200;
+   }
+
+   .thin-text{
+    font-weight: 400;
+   }
+
+   ion-card{
+    background-color: #fff;
+    padding-left: 10px;    
+    padding-right: 10px; 
+}
+
+.font-firma{
+    font-style: italic;
+    font-weight: 600;
+    text-align: right;
+}

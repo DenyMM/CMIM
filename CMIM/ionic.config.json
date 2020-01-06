@@ -1,5 +1,7 @@
 {
   "name": "CMIM",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
